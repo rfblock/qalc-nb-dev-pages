@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: Clone pages
-        run: git clone https://github.com/rfblock/qalculate-nb.git && cd qalculate-nb; git checkout gh-pages-dev
+        run: git clone https://github.com/rfblock/qalculate-nb.git && cd qalculate-nb; git checkout gh-pages-dev; rm -rf .git/
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2.1.3
